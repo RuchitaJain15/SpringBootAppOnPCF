@@ -21,7 +21,7 @@ public class SpringBootAppOnPcfApplication {
 class MessageRestController{
 @RequestMapping("/hello")
 	String getMessage(@RequestParam(value = "name") String name){
-String rsp = "Hi "+name+": responded on - "+ new Date();
+String rsp = "Hi "+name+": responded on  - "+ new Date();
 System.out.println(rsp);
 return rsp;
 	}
