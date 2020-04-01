@@ -1,0 +1,10 @@
+---
+applications:
+- name: SpringBootAppOnPCF
+  host: SpringBootAppOnPCF
+  path: target/SpringBootAppOnPCF-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.26
+  memory: 1024M
+  instances: 1
+  JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+  SPRING_PROFILES_ACTIVE: development
